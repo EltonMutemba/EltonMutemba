@@ -2,7 +2,7 @@
 
 ###
 
-<h4 align="left">Desenvolvedor Front-End | Análista de Dados</h4>
+<h4 align="left">*Desenvolvedor Front-End | Análista de Dados*</h4>
 
 ###
 
@@ -56,6 +56,10 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/EltonMutemba/EltonMutemba/output/snake.svg" alt="Snake animation" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EltonMutemba/EltonMutemba/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EltonMutemba/EltonMutemba/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/EltonMutemba/EltonMutemba/output/pacman-contribution-graph.svg">
+</picture>
 
 ###
