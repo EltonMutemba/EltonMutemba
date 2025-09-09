@@ -1,0 +1,25 @@
+name: generate pacman graph
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Executa todo dia à meia-noite (UTC)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate Pac-Man graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          output: "pacman-graph.svg" # Nome do arquivo SVG gerado
+          commit_message: "feat: update pacman contribution graph"
+
+      - name: Push new graph
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "feat: update pacman contribution graph"
